@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 
 // Importando a logo
 import logoGda from '../../assets/images/logo-gda.png';

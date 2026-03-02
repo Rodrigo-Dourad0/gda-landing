@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './Services.css';
+import './cervices.css';
 
 import imgCorrida from '../../assets/images/corrida.jpg';
 import imgFuncional from '../../assets/images/funcional.jpg';
