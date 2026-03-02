@@ -1,0 +1,20 @@
+:root {
+  --gda-green: #00FF41;      /* Vibrant athletic green */
+  --gda-black: #0D0D0D;      /* Deep black background */
+  --gda-dark-grey: #1A1A1A;  /* For cards and contrast */
+  --gda-white: #FFFFFF;      /* Clean text and highlights */
+  --gda-text-muted: #A0A0A0; /* Subtle text for descriptions */
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--gda-black);
+  color: var(--gda-white);
+}

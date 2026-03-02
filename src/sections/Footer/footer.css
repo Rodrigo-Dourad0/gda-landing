@@ -1,0 +1,109 @@
+
+.footer {
+  background-color: #050505;
+  color: #fff;
+  padding-top: 60px;
+  border-top: 2px solid var(--color-primary, #00FF41);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha tudo ao topo */
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Coluna da Marca */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha à esquerda no Desktop */
+  max-width: 300px;
+}
+
+/* Imagem da Logo */
+.footer-logo-img {
+  width: 100px; /* Tamanho da imagem */
+  height: auto;
+  margin-bottom: 10px; /* Espaço entre imagem e texto GDA */
+}
+
+/* Texto GDA (NOVO) */
+.footer-brand-name {
+  font-size: 2rem; /* Tamanho grande */
+  font-weight: 900; /* Extra negrito */
+  color: #fff;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 2px; /* Espaçamento entre letras para ficar chique */
+  text-transform: uppercase;
+}
+
+/* Slogan */
+.footer-slogan {
+  color: #999;
+  font-size: 0.95rem;
+  margin-top: 10px; /* Espaço entre texto GDA e slogan */
+  line-height: 1.5;
+}
+
+/* Redes Sociais */
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--color-primary, #00FF41);
+  padding-left: 5px;
+}
+
+/* Barra de Copyright */
+.footer-bottom {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1A1A1A;
+}
+
+.footer-bottom p {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Responsividade (Celular) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo no mobile */
+    text-align: center;
+  }
+
+  .footer-brand {
+    align-items: center; /* Centraliza logo e textos */
+    margin-bottom: 20px;
+  }
+
+  .footer-logo-img {
+    margin: 0 auto 10px auto;
+  }
+}

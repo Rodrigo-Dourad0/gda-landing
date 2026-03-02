@@ -1,0 +1,52 @@
+
+:root {
+  /* Paleta de Cores GDA */
+  --color-primary: #00FF41;      /* Verde Neon (Foco/Ação) */
+  --color-black: #0D0D0D;        /* Fundo Principal */
+  --color-dark-gray: #1A1A1A;    /* Fundo Secundário (Cards) */
+  --color-white: #FFFFFF;        /* Texto Principal */
+  --color-text-muted: #B3B3B3;   /* Texto Secundário */
+  
+  /* Configurações Globais */
+  --font-main: 'Inter', system-ui, sans-serif;
+  --max-width: 1200px;
+}
+
+/* Reset Básico (Tira as margens padrão do navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-green {
+  color: var(--color-primary);
+}
+
+/* Estilização padrão de links e botões */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
