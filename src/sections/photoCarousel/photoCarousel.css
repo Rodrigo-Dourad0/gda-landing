@@ -1,0 +1,74 @@
+
+
+.photo-carousel {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Ajuste a altura conforme preferir */
+  min-height: 400px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Escurece levemente as fotos */
+}
+
+/* Indicadores */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--color-primary, #00FF41);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .photo-carousel {
+    height: 35vh;      /* Diminuído de 60vh para 35vh */
+    min-height: 250px; /* Altura mínima menor para telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-carousel {
+    height: 25vh;      /* Ainda mais fino em celulares muito pequenos */
+    min-height: 200px;
+  }
+}
